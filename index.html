@@ -12,11 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+    <!-- Hero header -->
     <header class="header">
-        <a href="" class="header__logo">
+        <div class="container">
+            <div class="header__container">
+        <a class="header__logo" href="">
             <img src="./images/logo.svg" alt="logo">
         </a>
         <button class="menu__btn is-active" type="button" aria-label="switcher menu" data-menu-button aria-expanded="false">
@@ -35,24 +38,27 @@
             </ul>
         </nav>
         <button class="header__btn">Buy now</button>
-        
-    </header>
-    <main>
+        </div>
+
         <!-- Hero -->
         <section class="hero">
             <h1 class="hero__title">ice cream made with <span>passion</span>
             </h1>
-            <ul class="facts">
-                <li>16 cafes</li>
-                <li>23 food trucks</li>
+            <ul class="facts hero__facts">
+                <li class="facts__it">16 cafes</li>
+                <li class="facts__it">23 food trucks</li>
             </ul>
-            <button>Products</button>
-            <button>How it’s made?</button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <button class="hero-btn__prodacts" type="button">Products</button>
+            <button class="hero-btn__about" type="button">How it’s made?</button>
+            <p class="hero__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
         </section>
+        </div>
+    </header>
+    <main>
         <!-- Menu -->
         <section class="menu">
+            <div class="container">
             <h2 class="menu__title">100% natural <span>products</span> </h2>
             <ul class="menu__list">
                 <li class="menu__it">
@@ -74,9 +80,11 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- Technology of prodaction -->
         <section class="technology">
+            <div class="container">
             <h2 class="technology__title">tradition and love <span>how it’s made?</span></h2>
             <article>
                 <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
@@ -93,9 +101,11 @@
                 <li class="technology__it"><p class="technology__dscr"><span>16kg</span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p></li>
                 <li class="technology__it"><p class="technology__dscr"><span>84</span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p></li>
             </ul>
+            </div>
         </section>
         <!-- Galery -->
-        <section class="galery"></section>
+        <section class="galery">
+        <div class="container">
         <ul class="galery__list">
             <li class="galery__it">
                 <picture class="gelery__pic"></picture>
@@ -128,14 +138,19 @@
                 <picture class="gelery__pic"></picture>
             </li>
         </ul>
+        </div>
+        </section>
         <!-- Feedback -->
         <section class="feedback">
+            <div class="container">
             <p class="feedbeck__dscr">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
             congue. Lorem ipsum primis in nibh vel risus.</p>
             <p class="feedback__signature">Emily, Los Angeles</p>
+            </div>
         </section>
         <!-- Our locations -->
         <section class="locations">
+            <div class="container">
             <ul class="locations__list">
             <li class="locations__it">
                 <h2 class="locations__name">CAFE</h2>
@@ -185,8 +200,10 @@
             </ul>
             <button>Our Locations</button>
             <button>Franchise</button>
+            </div>
         </section>
         <footer>
+            <div class="container">
             <p class="slogan">homemade ice cream made <span>with passion</span></p>
             <ul class="footer__list">
                 <li class="footer__link"></li>
@@ -198,6 +215,7 @@
                 <address><a class="footer__tel" href="tel:+610383766284">+61(0) 383 766 284</a></address>
             </p>
             <p>© 2019 - IceCream. All Rights Reserved.</p>
+            </div>
         </footer>
     </main>
     <!-- Mobile menu -->

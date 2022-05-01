@@ -1,0 +1,22 @@
+.header {
+    
+
+    background-color: var(--akcent-bg-color);
+}
+
+.header__container {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav,
+.header__btn {
+    display: none;
+}
+.menu__title {
+    font-family: Titan One, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #D41443;
+}
