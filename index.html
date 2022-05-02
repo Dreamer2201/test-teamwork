@@ -50,10 +50,10 @@
                 <li class="facts__it">16 cafes</li>
                 <li class="facts__it">23 food trucks</li>
             </ul>
-            <ul class="hero__btns">
+            <div class="hero__btns">
                 <button class="hero__btn hero__btn--prodacts" type="button">Products</button>
                 <button class="hero__btn hero__btn--about" type="button">How it’s made?</button>
-            </ul>
+            </div>
             <div class="hero__milk-dscr-overlay">
                 <img class="hero__img-milk" src="./images/hero-milk.png" alt="photo milk" width="152" height="154">
                 <p class="hero__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -66,29 +66,30 @@
     </header>
     <main>
         <!-- Products -->
-        <section class="prodacts>
+        <section class="prodacts">
             <div class="container">
-            <h2 class="prodacts__title">100% natural <span>products</span> </h2>
-            <ul class="prodacts__list">
-                <li class="prodacts__it">
-                   <a href="" class="prodacts__link">
-                       <h3 class="prodacts__subtitle">ice cream</h3>
-                       <p class="prodacts__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                   </a> 
-                </li>
-                <li class="prodacts__it">
+                <label class="prodacts__label" for="name">100% natural</label>
+                <h2 class="prodacts__title" id="name">products</h2>
+                <ul class="prodacts__list">
+                    <li class="prodacts__it">
                     <a href="" class="prodacts__link">
-                        <h3>ice coffee</h3>
+                        <h3 class="prodacts__subtitle">ice cream</h3>
                         <p class="prodacts__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    </a>
-                </li>
-                <li class="prodacts__it">
-                    <a href="" class="prodacts__link">
-                        <h3>milkshakes</h3>
-                        <p class="prodacts__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    </a>
-                </li>
-            </ul>
+                    </a> 
+                    </li>
+                    <li class="prodacts__it">
+                        <a href="" class="prodacts__link">
+                            <h3 class="prodacts__subtitle">ice coffee</h3>
+                            <p class="prodacts__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </a>
+                    </li>
+                    <li class="prodacts__it">
+                        <a href="" class="prodacts__link">
+                            <h3 class="prodacts__subtitle">milkshakes</h3>
+                            <p class="prodacts__dscr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- About -->
@@ -117,34 +118,34 @@
         <div class="container">
         <ul class="gallery__list">
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
             <li class="galery__it">
-                <picture class="gelery__pic"></picture>
+                
             </li>
             <li class="gallery__it">
-                <picture class="gellery__pic"></picture>
+                
             </li>
         </ul>
         </div>
@@ -165,45 +166,51 @@
                 <h2 class="contacts__name">CAFE</h2>
                 <h3 class="contacts__city">Chicago</h3>
                 <p class="contacts__dscr">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <p class="contacts__schedule">
+                <div class="contacts__schedule">
                     <p class="contacts__workdays">Monday - Friday</p>
                     <p class="workdays__time">06:00 AM - 10:00 PM</p>
                     <p class="contacts__weekends">Saturday - Sunday</p>
                     <p class="weekends__time">08:00 AM - 16:00 PM</p>
-                </p>
+                </div>
                 <address class="contacts__address">
+                    <ul>
                     <li><a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a></li>
                     <li><a class="contacts__mail" href="noreply@envato.com">noreply@envato.com</a></li>
+                    </ul>
                 </address>
             </li>
             <li class="contacts__it">
                 <h2 class="contacts__name">FOOD TRUCK</h2>
                 <h3 class="contacts__city">Los Angeles</h3>
                 <p class="contacts__dscr">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <p class="contacts__schedule">
-                <p class="contacts__workdays">Monday - Friday</p>
-                <p class="workdays__time">06:00 AM - 10:00 PM</p>
-                <p class="contacts__weekends">Saturday - Sunday</p>
-                <p class="weekends__time">08:00 AM - 16:00 PM</p>
-                </p>
+                <div class="contacts__schedule">
+                    <p class="contacts__workdays">Monday - Friday</p>
+                    <p class="workdays__time">06:00 AM - 10:00 PM</p>
+                    <p class="contacts__weekends">Saturday - Sunday</p>
+                    <p class="weekends__time">08:00 AM - 16:00 PM</p>
+                </div>
                 <address class="contacts__address">
+                    <ul>
                     <li><a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a></li>
                     <li><a class="contacts__mail" href="noreply@envato.com">noreply@envato.com</a></li>
+                    </ul>
                 </address>
             </li>
             <li class="contacts__it">
                 <h2 class="contacts__name">CAFE</h2>
                 <h3 class="contacts__city">New York</h3>
                 <p class="contacts__dscr">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <p class="contacts__schedule">
-                <p class="contacts__workdays">Monday - Friday</p>
-                <p class="workdays__time">06:00 AM - 10:00 PM</p>
-                <p class="contacts__weekends">Saturday - Sunday</p>
-                <p class="weekends__time">08:00 AM - 16:00 PM</p>
-                </p>
+                <div class="contacts__schedule">
+                    <p class="contacts__workdays">Monday - Friday</p>
+                    <p class="workdays__time">06:00 AM - 10:00 PM</p>
+                    <p class="contacts__weekends">Saturday - Sunday</p>
+                    <p class="weekends__time">08:00 AM - 16:00 PM</p>
+                </div>
             <address class="contacts__address">
+                <ul>
                 <li><a class="footer__tel" href="tel:+610383766284">+61(0) 383 766 284</a></li>
                 <li><a class="footer__mail" href="noreply@envato.com">noreply@envato.com</a></li>
+                </ul>
             </address>
             </li>
             </ul>
@@ -219,10 +226,10 @@
                 <li class="footer__link"></li>
                 <li class="footer__link"></li>
             </ul>
-            <p>
+            <div>
                 Feel free to contact +61 (0) 383 766 284
                 <address><a class="footer__tel" href="tel:+610383766284">+61(0) 383 766 284</a></address>
-            </p>
+            </div>
             <p>© 2019 - IceCream. All Rights Reserved.</p>
             </div>
         </footer>
