@@ -13,13 +13,45 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__nav,
-.header__btn {
+.header__nav {
     display: none;
+
+    @include mq(desktop) {
+        display: block;
+    }
 }
+.header__list {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.header__it {
+    display: block;
+    margin-right: 35px;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--primary-text-color);
+
+    &:first-child {
+        color: var(--akcent-text-color);
+    }
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+}
+
 .menu__title {
     font-family: Titan One, sans-serif;
     font-weight: 400;
     font-size: 34px;
     color: #D41443;
+}
+
+.header__btns-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

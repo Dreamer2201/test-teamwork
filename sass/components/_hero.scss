@@ -8,6 +8,29 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+
+    @include mq(tablet) {
+        right: 303px;
+    }
+    @include mq(desktop) {
+        right: 408px;
+    }
+}
+
+.hero__img-girl {
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+    }
+
+    @include mq(desktop) {
+        right: 16px;
+    }
+    
 }
 
 .hero__title { 
@@ -20,6 +43,10 @@
     line-height: 1.15 ;
     letter-spacing: 0.04em;
     color: var(--primary-text-color);
+
+    @include mq(tablet) {
+        margin-top: 20px;
+    }
 }
 .title__akcent {
     
@@ -28,9 +55,23 @@
     color: var(--akcent-text-color);
 }
 
-.hero__facts,
+.hero__facts {
+    display: none;
+}
 .hero__dscr {
     display: none;
+
+    @include mq(tablet) {
+        display: block;
+        width: 114px;
+
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.5;
+        color: var(--primary-text-color);
+    }
+
 }
 
 .hero__title,
@@ -38,6 +79,22 @@
     position: relative;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 50;
 }
     
+.hero__img-milk {
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+}
+    
+}
+.hero__milk-dscr-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+.header__btn {
+    display: none;
+
+    @include mq(tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 16px 40px;
+        margin-left: 32px;
+
+        min-width: 160px;
+        height: 44px;
+        border: 1px solid transparent;
+        border-radius: 22px;
+
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        text-align: center;
+
+        background-color: var(--primary-text-color);
+        color: var(--akcent-text-color);
+    }
+}
+
+

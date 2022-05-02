@@ -1,0 +1,21 @@
+.mobile__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    padding: 16px 62px;
+    
+    min-width: 209px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 22px;
+    
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    
+    background-color: var(--primary-text-color);
+    color: var(--akcent-text-color);
+}

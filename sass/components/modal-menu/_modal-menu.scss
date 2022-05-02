@@ -14,7 +14,9 @@
     left: 0;
     z-index: 99;
 
-
+    @include mq(desktop) {
+        display: none;
+    }
 }
 
 .icon__menu {
@@ -31,26 +33,29 @@
     top: 0;
     left: 0;
 
-    z-index: 10;
-
-    width: 320px;
-    height: 100%;
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
     background-color: #E17992;
+
+    z-index: 60;
 
     transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
+
+    &.is-open {
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: initial;
+    }
 }
 
 .mobile__menu {
+    padding: 60px 20px;
+
     width: 100%;
     height: 100%;
-}
-
-.mobile__overlay.is-open {
-    transform: translateX(0);
-    visibility: visible;
-    pointer-events: initial;
 }
 
 .menu__btn.is-active .icon__menu {
@@ -82,4 +87,27 @@
 .mobile__link {
     text-decoration: none;
     color: #FFFFFF;
+
+    &--current {
+        color: var(--akcent-text-color);
+    }
+}
+
+.mobile__it {
+    display: block;
+    margin-bottom: 23px;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--primary-text-color);
+
+    &:first-child {
+        margin-bottom: 22px;
+    }
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
 }
