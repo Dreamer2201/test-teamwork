@@ -1,6 +1,9 @@
 @import "./utils/variables";
 @import './utils/mixins';
+@import './utils/reset';
 @import "./base/container";
 @import "./base/common-styles";
 @import "./components/header";
+@import './components/hero';
+@import './components/btn/hero-btn';
 @import './components/modal-menu/modal-menu';

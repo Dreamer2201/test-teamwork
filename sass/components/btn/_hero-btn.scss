@@ -1,0 +1,33 @@
+.hero__btns {
+    display: flex;
+    margin-right: auto;
+}
+.hero__btn {
+    display: block;
+    margin: 0;
+    padding: 9px, 14px;
+    margin-right: auto;
+
+    min-width: 61px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    
+    &--prodacts {
+        margin-right: 8px;
+
+        background-color: var(--akcent-text-color);
+        color: var(--primary-text-color);
+    }
+    &--about {
+        background-color: var(--primary-text-color);
+        color: var(--akcent-text-color);
+    }
+
+    transition: background-color var(--animation-function);
+}

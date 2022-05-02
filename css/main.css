@@ -2,6 +2,11 @@
   --primary-bg-color: #E5E5E5;
   --secondary-bg-color: #FFF5F6;
   --akcent-bg-color: #FFB8CA;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #907E82;
+  --dark-text-color: #000000;
+  --akcent-text-color: #D41443;
+  --header-text-color: #FFA5BA;
   /* Light-theme-color */
   --primary-light-text: #212121;
   --secondary-light-text: #757575;
@@ -17,6 +22,23 @@
   --card-set-gap: 30px;
   /* Another var */
   --animation-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.hero__facts {
+  list-style: none;
 }
 
 .container {
@@ -46,7 +68,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -55,6 +77,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.hero-header__container {
+  height: 510px;
 }
 
 .header {
@@ -80,8 +106,86 @@ img {
   color: #D41443;
 }
 
+.hero-header__container {
+  position: relative;
+}
+
+.hero {
+  font-family: "Titan One", sans-serif;
+}
+
+.hero__img-ice-cream {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+}
+
+.hero__title {
+  margin-top: 136px;
+  margin-bottom: 20px;
+  width: 218px;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color);
+}
+
+.title__akcent {
+  font-size: 48px;
+  line-height: 0.97;
+  color: var(--akcent-text-color);
+}
+
+.hero__facts,
+.hero__dscr {
+  display: none;
+}
+
+.hero__title,
+.hero__btns {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.hero__btns {
+  display: flex;
+  margin-right: auto;
+}
+
+.hero__btn {
+  display: block;
+  margin: 0;
+  padding: 9px, 14px;
+  margin-right: auto;
+  min-width: 61px;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  transition: background-color var(--animation-function);
+}
+
+.hero__btn--prodacts {
+  margin-right: 8px;
+  background-color: var(--akcent-text-color);
+  color: var(--primary-text-color);
+}
+
+.hero__btn--about {
+  background-color: var(--primary-text-color);
+  color: var(--akcent-text-color);
+}
+
 .menu__btn {
   display: block;
+  margin: 0;
+  padding: 0;
   width: 20px;
   height: 14px;
   background-color: transparent;

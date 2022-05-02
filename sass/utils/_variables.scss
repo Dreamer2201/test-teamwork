@@ -3,7 +3,14 @@
     --primary-bg-color: #E5E5E5;
     --secondary-bg-color: #FFF5F6;
     --akcent-bg-color: #FFB8CA;
-    
+
+    // text-color
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #907E82;
+    --dark-text-color: #000000;
+    --akcent-text-color: #D41443;
+    --header-text-color: #FFA5BA;
+
     /* Light-theme-color */
     --primary-light-text: #212121;
     --secondary-light-text: #757575;
@@ -21,7 +28,7 @@
     --animation-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-$main-font: "Roboto",
+$main-font: "DM Sans",
 sans-serif;
-$secondary-font: "Raleway",
+$secondary-font: "Titan One",
 sans-serif;
