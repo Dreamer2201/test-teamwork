@@ -1,0 +1,56 @@
+.advantages {
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 80px;
+}
+.advantages__it {
+    margin-bottom: 32px;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+}
+.advantages__numbers {
+    font-family: $secondary-font;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--akcent-text-color);
+
+    &::before {
+        display: block;
+        margin-bottom: 36px;
+        content: '';
+        width: 33px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/about-milk.png");
+        
+    }
+}
+
+.advantages__dscr {
+    width: 230px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+    color: var(--dark-text-color);
+}
+
+.list-link::before,
+.list-link::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+/* Adds a fire icon in front of the link text */
+.list-link::before {
+    margin-right: 16px;
+    
+}

@@ -1,0 +1,47 @@
+.about {
+    background-color: var(--secondary-bg-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-family: $secondary-font;
+}
+.about__title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 250px;
+    text-align: center;
+    color: var(--header-text-color);
+
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+}
+.about__span {
+    margin-bottom: 32px;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--akcent-text-color);
+}
+.about__img-cow {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+.about__dscr {
+    width: 220px;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: var(--dark-text-color);
+    margin-bottom: 40px;
+
+    &--mode {
+        color: var(--secondary-text-color);
+        margin-bottom: 20px;
+    }
+}

@@ -23,6 +23,12 @@
         background-color: var(--primary-text-color);
         color: var(--akcent-text-color);
     }
+
+    &--about {
+        min-width: 176px;
+        margin-left: 0px;
+        margin-right: auto;
+    }
 }
 
 
