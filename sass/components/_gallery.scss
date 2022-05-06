@@ -1,0 +1,45 @@
+.gallery {
+    width: 100vw;
+    height: 122px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(/images/gallery/gallery-s.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-s.webp) 1x);
+
+    @include mq(retina) {
+        background-image: url(/images/gallery/gallery-s@2x.png);
+        background-image: -webkit-image-set(url(/images/gallery/gallery-s@2x.webp) 2x);
+    }
+
+    @include mq (tablet) {
+
+        height: 264px;
+
+        background-image: url(/images/gallery/gallery-m.png);
+        background-image: -webkit-image-set(url(/images/gallery/gallery-m.webp) 1x);
+        
+        @include mq(retina) {
+            background-image: url(/images/gallery/gallery-m@2x.png);
+            background-image: -webkit-image-set(url(/images/gallery/gallery-m@2x.webp) 2x);
+        }
+    }
+
+    @include mq (desktop) {
+            padding-bottom: 120px;
+            height: 430px;
+            margin-left: auto;
+            margin-right: auto;
+
+        background-image: url(/images/gallery/gallery-l.png);
+        background-image: -webkit-image-set(url(/images/gallery/gallery-l.webp) 1x);
+    
+        @include mq(retina) {
+            background-image: url(/images/gallery/gallery-l@2x.png);
+            background-image: -webkit-image-set(url(/images/gallery/gallery-l@2x.webp) 2x);
+        }
+    }
+
+}

@@ -661,4 +661,55 @@ img {
 .list-link::before {
   margin-right: 16px;
 }
+
+.gallery {
+  width: 100vw;
+  height: 122px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/images/gallery/gallery-s.png);
+  background-image: -webkit-image-set(url(/images/gallery/gallery-s.webp) 1x);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(/images/gallery/gallery-s@2x.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-s@2x.webp) 2x);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 264px;
+    background-image: url(/images/gallery/gallery-m.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-m.webp) 1x);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(/images/gallery/gallery-m@2x.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-m@2x.webp) 2x);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding-bottom: 120px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/gallery/gallery-l.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-l.webp) 1x);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(/images/gallery/gallery-l@2x.png);
+    background-image: -webkit-image-set(url(/images/gallery/gallery-l@2x.webp) 2x);
+  }
+}
 /*# sourceMappingURL=main.css.map */
